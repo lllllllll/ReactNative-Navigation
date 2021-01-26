@@ -13,7 +13,7 @@ function checkAction(state: {}, action: { type: string; }, typeCase: { success: 
 };
 
 const getUser = (state = {}, action: any) => checkAction(state, action, types.getUsers);
-const getUserAll = (state = {}, action: any) => checkAction(state, action, types.postUsers);
+const getUserAll = (state = {}, action: any) => checkAction(state, action, types.getUserAll);
 
 const rootReducer = combineReducers({
   getUser, getUserAll
